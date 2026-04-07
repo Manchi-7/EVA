@@ -1,4 +1,4 @@
-# EVA2: VLM GUI Agent Robustness Evaluation Framework
+# EVA2: Evolving Visual Adversaries for Red-Teaming GUI Agents
 
 EVA2 is a three-stage evaluation pipeline for adversarial popup attacks against Vision-Language Model GUI agents.
 
