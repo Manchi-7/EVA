@@ -1,6 +1,6 @@
-# EVA2: VLM GUI Agent 鲁棒性评估框架
+# EVA: 面向 GUI 智能体红队测试的进化式视觉对抗方法
 
-EVA2 是一个面向 Vision-Language Model GUI Agent 的对抗性弹窗评测框架。
+EVA 是一个面向 Vision-Language Model GUI Agent 的对抗性弹窗评测框架。
 项目提供完整的三阶段流水线：
 
 1. 采集成功攻击样本
