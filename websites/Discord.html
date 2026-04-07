@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord - #常规 | my server</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Material Icons (Using for generic icons) -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <style>
+        /* Custom Font settings to match Discord roughly */
+        @import url('https://fonts.googleapis.com/css2?family=gg+sans:wght@400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+
+        /* Discord Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background-color: #2b2d31; 
+            border-radius: 4px;
+        }
+        /* Light theme scrollbar track override */
+        .light-theme ::-webkit-scrollbar-track {
+            background-color: #e3e5e8;
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: #1a1b1e;
+            border-radius: 4px;
+        }
+        /* Light theme scrollbar thumb override */
+        .light-theme ::-webkit-scrollbar-thumb {
+            background-color: #c4c9ce;
+        }
+
+        /* Utility classes */
+        .sidebar-icon {
+            @apply relative flex items-center justify-center h-12 w-12 mt-2 mb-2 mx-auto shadow-sm cursor-pointer transition-all duration-200 ease-out;
+            background-color: #313338; /* Dark default */
+            color: #dbdee1;
+            border-radius: 50%;
+        }
+        
+        /* Light theme sidebar icon override */
+        .light-theme .sidebar-icon {
+            background-color: #ffffff;
+            color: #313338;
+        }
+
+        .sidebar-icon:hover {
+            border-radius: 16px; /* Squircle */
+            background-color: #5865f2; /* Discord Blurple */
+            color: white;
+        }
+
+        .sidebar-active {
+            border-radius: 16px !important;
+            background-color: #5865f2 !important;
+            color: white !important;
+        }
+
+        .channel-item {
+            @apply flex items-center px-2 py-1.5 mx-2 rounded cursor-pointer text-gray-500 hover:bg-gray-200 hover:text-gray-900;
+        }
+        
+        .channel-item-active {
+            @apply bg-gray-200 text-gray-900 font-medium;
+        }
+
+        .message-group:hover {
+            background-color: rgba(0, 0, 0, 0.02);
+        }
+
+        /* Tooltip mimic */
+        .tooltip-indicator {
+            position: absolute;
+            left: -12px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 0px;
+            background-color: black;
+            border-radius: 0 4px 4px 0;
+            transition: all 0.2s;
+        }
+        .sidebar-icon:hover .tooltip-indicator {
+            height: 20px;
+        }
+        .sidebar-active .tooltip-indicator {
+            height: 40px;
+        }
+    </style>
+</head>
+<body class="h-screen w-screen overflow-hidden flex light-theme bg-white text-gray-900">
+
+    <!-- 1. Leftmost Server Sidebar -->
+    <nav class="w-[72px] flex-shrink-0 flex flex-col items-center py-3 bg-[#E3E5E8] overflow-y-auto hide-scrollbar z-20">
+        <!-- Direct Messages / Discord Icon -->
+        <div class="sidebar-icon mb-2">
+            <span class="material-icons text-3xl">discord</span>
+            <div class="tooltip-indicator" style="display:none;"></div>
+        </div>
+
+        <div class="w-8 h-[2px] bg-gray-300 rounded-lg mx-auto mb-2"></div>
+
+        <!-- Active Server (ms) -->
+        <div class="relative w-full flex justify-center">
+            <div class="absolute left-0 top-1/2 -translate-y-1/2 w-[4px] h-[40px] bg-black rounded-r-lg"></div> <!-- Active Pill -->
+            <div class="sidebar-icon sidebar-active text-white">
+                <span class="font-bold text-sm">ms</span>
+            </div>
+        </div>
+
+        <!-- Add Server -->
+        <div class="sidebar-icon text-green-600 bg-white hover:bg-green-600 hover:text-white group">
+            <span class="material-icons text-2xl group-hover:text-white transition-colors">add</span>
+        </div>
+
+        <!-- Explore -->
+        <div class="sidebar-icon text-green-600 bg-white hover:bg-green-600 hover:text-white group">
+            <span class="material-icons text-2xl group-hover:text-white transition-colors">explore</span>
+        </div>
+        
+        <div class="w-8 h-[2px] bg-gray-300 rounded-lg mx-auto my-2"></div>
+
+        <!-- Download -->
+        <div class="sidebar-icon text-green-600 bg-white hover:bg-green-600 hover:text-white group">
+            <span class="material-icons-outlined text-2xl group-hover:text-white transition-colors">file_download</span>
+        </div>
+    </nav>
+
+    <!-- 2. Second Sidebar: Channels -->
+    <div class="w-60 bg-[#F2F3F5] flex flex-col flex-shrink-0 relative">
+        <!-- Server Header -->
+        <header class="h-12 px-4 flex items-center justify-between shadow-sm cursor-pointer hover:bg-gray-200 transition-colors border-b border-gray-200">
+            <h1 class="font-bold text-sm truncate text-gray-900">my server</h1>
+            <span class="material-icons text-gray-600 text-xl">expand_more</span>
+        </header>
+
+        <!-- Channel List -->
+        <div class="flex-1 overflow-y-auto py-3 space-y-[2px] custom-scrollbar">
+            
+            <!-- Events -->
+            <div class="channel-item">
+                <span class="material-icons-outlined text-gray-500 mr-1.5 text-xl">event</span>
+                <span class="text-gray-600">Events</span>
+            </div>
+
+            <div class="h-2"></div>
+
+            <!-- Category: Text Channels -->
+            <div class="flex items-center justify-between px-4 pt-4 pb-1 text-xs font-bold text-gray-500 hover:text-gray-600 cursor-pointer uppercase">
+                <div class="flex items-center">
+                    <span class="material-icons text-[10px] mr-0.5">expand_more</span>
+                    <span>文字频道</span>
+                </div>
+                <span class="material-icons text-lg cursor-pointer hover:text-gray-900">add</span>
+            </div>
+            
+            <!-- Active Channel -->
+            <div class="channel-item channel-item-active group">
+                <span class="material-icons text-gray-500 text-xl mr-1.5">tag</span>
+                <span class="text-gray-900 font-medium truncate">常规</span>
+                <span class="material-icons text-gray-900 text-xs ml-auto hidden group-hover:block">person_add</span>
+            </div>
+
+            <div class="h-2"></div>
+
+            <!-- Category: Voice Channels -->
+            <div class="flex items-center justify-between px-4 pt-4 pb-1 text-xs font-bold text-gray-500 hover:text-gray-600 cursor-pointer uppercase">
+                <div class="flex items-center">
+                    <span class="material-icons text-[10px] mr-0.5">expand_more</span>
+                    <span>语音频道</span>
+                </div>
+                <span class="material-icons text-lg cursor-pointer hover:text-gray-900">add</span>
+            </div>
+
+             <!-- Voice Channel -->
+             <div class="channel-item group">
+                <span class="material-icons text-gray-500 text-xl mr-1.5">volume_up</span>
+                <span class="text-gray-600 truncate">常规</span>
+            </div>
+
+        </div>
+
+        <!-- User Area (Bottom) -->
+        <div class="h-[52px] bg-[#EBEDEF] flex items-center px-2 py-1 flex-shrink-0">
+            <!-- Avatar -->
+            <div class="relative group cursor-pointer mr-2">
+                <div class="w-8 h-8 rounded-full bg-red-500 flex items-center justify-center text-white text-xs overflow-hidden">
+                    <img src="https://ui-avatars.com/api/?name=who&background=ef4444&color=fff" alt="Avatar">
+                </div>
+                <div class="absolute bottom-[-2px] right-[-2px] w-3.5 h-3.5 bg-[#EBEDEF] rounded-full flex items-center justify-center">
+                     <div class="w-2.5 h-2.5 bg-green-600 rounded-full"></div>
+                </div>
+            </div>
+            
+            <!-- User Info -->
+            <div class="flex-1 min-w-0 mr-1 cursor-pointer">
+                <div class="text-xs font-bold text-gray-900 truncate">who</div>
+                <div class="text-[11px] text-gray-600 truncate">Online</div>
+            </div>
+
+            <!-- User Actions -->
+            <div class="flex items-center">
+                <button class="w-8 h-8 flex items-center justify-center rounded hover:bg-gray-200 cursor-pointer">
+                    <span class="material-icons text-xl text-gray-600">mic</span>
+                </button>
+                <button class="w-8 h-8 flex items-center justify-center rounded hover:bg-gray-200 cursor-pointer">
+                    <span class="material-icons text-xl text-gray-600">headset</span>
+                </button>
+                <button class="w-8 h-8 flex items-center justify-center rounded hover:bg-gray-200 cursor-pointer">
+                    <span class="material-icons text-xl text-gray-600">settings</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. Main Chat Area -->
+    <main class="flex-1 flex flex-col min-w-0 bg-white relative z-10">
+        <!-- Chat Header -->
+        <header class="h-12 px-4 flex items-center justify-between shadow-sm border-b border-gray-200 flex-shrink-0">
+            <div class="flex items-center min-w-0">
+                <span class="material-icons text-2xl text-gray-500 mr-2">tag</span>
+                <h3 class="font-bold text-gray-900 mr-4 truncate">常规</h3>
+                <!-- Topic placeholder could go here -->
+            </div>
+            
+            <!-- Header Toolbar -->
+            <div class="flex items-center space-x-3 text-gray-600">
+                <span class="material-icons text-2xl cursor-pointer hover:text-gray-800">tag</span>
+                <span class="material-icons text-2xl cursor-pointer hover:text-gray-800">notifications</span>
+                <span class="material-icons text-2xl cursor-pointer hover:text-gray-800 transform rotate-45">push_pin</span>
+                <span class="material-icons text-2xl cursor-pointer hover:text-gray-800">people_alt</span>
+                
+                <!-- Search Bar -->
+                <div class="relative bg-[#F2F3F5] rounded transition-all w-36 focus-within:w-60 flex items-center ml-2">
+                    <input type="text" placeholder="Search" class="bg-transparent border-none text-sm px-2 py-1 w-full focus:outline-none placeholder-gray-500 text-gray-700">
+                    <span class="material-icons text-lg text-gray-500 pr-1">search</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Messages Area -->
+        <div class="flex-1 overflow-y-auto p-4 space-y-1 custom-scrollbar flex flex-col-reverse">
+            <!-- Reverse column allows us to stick to bottom naturally, but standard HTML flow is better for chat logs usually. Let's use standard flow and simulate content -->
+            
+            <!-- Message 7 -->
+            <div class="message-group flex mt-4 hover:bg-gray-50 pr-4 -ml-2 pl-2 py-1">
+                <div class="w-10 h-10 rounded-full bg-blue-500 mr-4 flex-shrink-0 cursor-pointer overflow-hidden mt-0.5">
+                    <img src="https://ui-avatars.com/api/?name=who&background=ef4444&color=fff" alt="Avatar">
+                </div>
+                <div class="flex-1 min-w-0">
+                    <div class="flex items-center mb-1">
+                        <span class="font-medium text-gray-900 mr-2 cursor-pointer hover:underline">who</span>
+                        <span class="text-xs text-gray-500 ml-1">4/11/25, 7:46 AM</span>
+                    </div>
+                    <p class="text-gray-800 leading-normal">Same. Adding some cheese tteokbokki too. Let's FEAST!</p>
+                </div>
+            </div>
+
+            <!-- Message 6 -->
+            <div class="message-group flex mt-4 hover:bg-gray-50 pr-4 -ml-2 pl-2 py-1">
+                <div class="w-10 h-10 rounded-full bg-blue-500 mr-4 flex-shrink-0 cursor-pointer overflow-hidden mt-0.5">
+                    <img src="https://ui-avatars.com/api/?name=who&background=ef4444&color=fff" alt="Avatar">
+                </div>
+                <div class="flex-1 min-w-0">
+                    <div class="flex items-center mb-1">
+                        <span class="font-medium text-gray-900 mr-2 cursor-pointer hover:underline">who</span>
+                        <span class="text-xs text-gray-500 ml-1">4/11/25, 7:46 AM</span>
+                    </div>
+                    <p class="text-gray-800 leading-normal">Awesome. I'll get the soy garlic wings and maybe kimchi fried rice. 😋</p>
+                </div>
+            </div>
+
+            <!-- Message 5 -->
+            <div class="message-group flex mt-4 hover:bg-gray-50 pr-4 -ml-2 pl-2 py-1">
+                <div class="w-10 h-10 rounded-full bg-blue-500 mr-4 flex-shrink-0 cursor-pointer overflow-hidden mt-0.5">
+                    <img src="https://ui-avatars.com/api/?name=who&background=ef4444&color=fff" alt="Avatar">
+                </div>
+                <div class="flex-1 min-w-0">
+                    <div class="flex items-center mb-1">
+                        <span class="font-medium text-gray-900 mr-2 cursor-pointer hover:underline">who</span>
+                        <span class="text-xs text-gray-500 ml-1">4/11/25, 7:46 AM</span>
+                    </div>
+                    <div class="text-gray-800 leading-normal">
+                        <p>Okay I'm sold. Let's order from there. I'll post the link.</p>
+                        <p class="mt-1">Here's the link to the menu: <a href="#" class="text-blue-500 hover:underline">https://www.seoulbites.com/menu</a></p>
+                        <p class="mt-1">You can order directly or through Uber Eats if that's easier.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Message 4 -->
+            <div class="message-group flex mt-4 hover:bg-gray-50 pr-4 -ml-2 pl-2 py-1">
+                <div class="w-10 h-10 rounded-full bg-blue-500 mr-4 flex-shrink-0 cursor-pointer overflow-hidden mt-0.5">
+                    <img src="https://ui-avatars.com/api/?name=who&background=ef4444&color=fff" alt="Avatar">
+                </div>
+                <div class="flex-1 min-w-0">
+                    <div class="flex items-center mb-1">
+                        <span class="font-medium text-gray-900 mr-2 cursor-pointer hover:underline">who</span>
+                        <span class="text-xs text-gray-500 ml-1">4/11/25, 7:46 AM</span>
+                    </div>
+                    <p class="text-gray-800 leading-normal">Ohhh I've seen that on Instagram! It looks 🔥🔥🔥</p>
+                </div>
+            </div>
+
+            <!-- Message 3 -->
+            <div class="message-group flex mt-4 hover:bg-gray-50 pr-4 -ml-2 pl-2 py-1">
+                <div class="w-10 h-10 rounded-full bg-blue-500 mr-4 flex-shrink-0 cursor-pointer overflow-hidden mt-0.5">
+                    <img src="https://ui-avatars.com/api/?name=who&background=ef4444&color=fff" alt="Avatar">
+                </div>
+                <div class="flex-1 min-w-0">
+                    <div class="flex items-center mb-1">
+                        <span class="font-medium text-gray-900 mr-2 cursor-pointer hover:underline">who</span>
+                        <span class="text-xs text-gray-500 ml-1">4/11/25, 7:45 AM</span>
+                    </div>
+                    <p class="text-gray-800 leading-normal">Yes please! There's that new place "Seoul Bites" that opened last week — reviews are great!</p>
+                </div>
+            </div>
+
+            <!-- Message 2 -->
+            <div class="message-group flex mt-4 hover:bg-gray-50 pr-4 -ml-2 pl-2 py-1">
+                <div class="w-10 h-10 rounded-full bg-blue-500 mr-4 flex-shrink-0 cursor-pointer overflow-hidden mt-0.5">
+                    <img src="https://ui-avatars.com/api/?name=who&background=ef4444&color=fff" alt="Avatar">
+                </div>
+                <div class="flex-1 min-w-0">
+                    <div class="flex items-center mb-1">
+                        <span class="font-medium text-gray-900 mr-2 cursor-pointer hover:underline">who</span>
+                        <span class="text-xs text-gray-500 ml-1">4/11/25, 7:45 AM</span>
+                    </div>
+                    <p class="text-gray-800 leading-normal">Korean fried chicken sounds amazing. And we could get some tteokbokki with it</p>
+                </div>
+            </div>
+
+            <!-- Message 1 -->
+            <div class="message-group flex mt-4 hover:bg-gray-50 pr-4 -ml-2 pl-2 py-1">
+                <div class="w-10 h-10 rounded-full bg-blue-500 mr-4 flex-shrink-0 cursor-pointer overflow-hidden mt-0.5">
+                    <img src="https://ui-avatars.com/api/?name=who&background=ef4444&color=fff" alt="Avatar">
+                </div>
+                <div class="flex-1 min-w-0">
+                    <div class="flex items-center mb-1">
+                        <span class="font-medium text-gray-900 mr-2 cursor-pointer hover:underline">who</span>
+                        <span class="text-xs text-gray-500 ml-1">4/11/25, 7:45 AM</span>
+                    </div>
+                    <p class="text-gray-800 leading-normal">Spicy sounds good! Maybe Thai or some Korean fried chicken?</p>
+                </div>
+            </div>
+
+            <!-- Spacer for top if needed, using margin-top on first items -->
+            <div class="mt-auto"></div>
+        </div>
+
+        <!-- Input Area -->
+        <div class="px-4 pb-6 pt-2 bg-white flex-shrink-0">
+            <div class="bg-[#EBEDEF] rounded-lg p-2.5 flex items-center shadow-inner">
+                <div class="flex items-center justify-center bg-gray-300 rounded-full h-6 w-6 text-gray-600 cursor-pointer hover:text-gray-800 mr-4 flex-shrink-0">
+                    <span class="material-icons text-lg font-bold">add</span>
+                </div>
+                
+                <input type="text" placeholder="Message #常规" class="bg-transparent border-none flex-1 focus:outline-none text-gray-800 placeholder-gray-500">
+                
+                <div class="flex items-center space-x-3 ml-2 text-gray-600">
+                    <span class="material-icons text-2xl cursor-pointer hover:text-gray-800" title="Gift Nitro">card_giftcard</span>
+                    <span class="material-icons text-2xl cursor-pointer hover:text-gray-800" title="Open GIF picker">gif_box</span>
+                    <span class="material-icons-outlined text-2xl cursor-pointer hover:text-gray-800" title="Open Sticker picker">sticky_note_2</span>
+                    <span class="material-icons-outlined text-2xl cursor-pointer hover:text-gray-800" title="Select Emoji">sentiment_satisfied_alt</span>
+                </div>
+            </div>
+             <!-- Typing Indicator (Optional) -->
+             <div class="h-4 mt-1 text-xs font-bold text-gray-500 animate-pulse hidden">
+                who is typing...
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+        // Simple script to keep scroll at bottom on load
+        window.onload = function() {
+            const container = document.querySelector('.overflow-y-auto');
+            container.scrollTop = container.scrollHeight;
+        }
+    </script>
+</body>
+</html>

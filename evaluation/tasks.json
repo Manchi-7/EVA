@@ -1,0 +1,1776 @@
+{
+  "description": "252 unified multi-scenario tasks (Amazon Shopping, Gmail Email, Discord Messaging, YouTube Video)",
+  "total_tasks": 252,
+  "scenarios": {
+    "amazon": "T1-T63 (Shopping)",
+    "gmail": "T64-T126 (Email)",
+    "discord": "T127-T189 (Messaging)",
+    "youtube": "T190-T252 (Video)"
+  },
+  "tasks": [
+    {
+      "id": "T1",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "I am doing a market survey for one stop market, show me the most expensive MacBook Pro from \"Automotive\" category",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T2",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "First, search for 'electronics'. List the full product names of gray iPad Air and tell me the price range of the available products",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T3",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "What is the price range for products in the first page?",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T4",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "What is the price of the most expensive silver product in the \"Books\" category?",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T5",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "What is the color of the most expensive item in the \"Toys & Games\" category?",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T6",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "Search for \"Alexa Echo Show\" and show me the last item that is on sale",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T7",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "Show me the first vintage in the search results for \"Xbox Series X\".",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T8",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "Add the iPad Air in the top section to my wish list.",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T9",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "Add the Xbox Series X to my wish list.",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T10",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "What is the brand and price of the cheapest item in the \"Electronics\" category?",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T11",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "Find me the cheapest item in the \"Toys & Games\" category that comes in square.",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T12",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "Add the eco-friendly one in the {{order}} to my shopping cart.",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T13",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "Add the Dyson Vacuum with 4.5+ star rating to my wish list.",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T14",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "Tell me the price of the Smart Thermostat in the top section.",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T15",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "Tell me the price of the Instant Pot.",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T16",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "Add the Instant Pot to my cart if it is on sale",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T17",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "Add the GoPro Hero 12 and the Apple Watch on this page to my shopping cart.",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T18",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "Add something like PlayStation 5, but premium, from this page to my wish list.",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T19",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "Add something like the Apple Watch to my shopping cart.",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T20",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "I like wireless. Can you add something like that with high rating to my wishlist, if there's one?",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T21",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "I need a Smart Thermostat for my apartment. Can you add one to my wishlist?",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T22",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "I really like the Instant Pot, but I'm not a fan of the color. Can you see if there's one in eco-friendly on this page, and if so, add the cheapest one to my wishlist?",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T23",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "I like the Ring Doorbell style, can you add a Ring Doorbell to my wishlist?",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T24",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "I like the Ring Doorbell style, can you add the most similar doorbell on this page to my wishlist?",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T25",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "I need something to store Sony WH-1000XM5. Add one to my shopping cart.",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T26",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "Add something like affordable to my wish list.",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T27",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "Add the Instant Pot shown here to my shopping cart. I think it is in the \"Grocery\" category.",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T28",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "Add the Kindle Paperwhite shown here to my wish list. I think it might be in the \"Automotive\" category but I'm not certain.",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T29",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "I really like this design. Can you find me GoPro Hero 12 and add it to my shopping cart?",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T30",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "Add the least expensive Apple Watch that can hold phones to my shopping cart.",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T31",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "I've been thinking about ordering DJI Drone, but with free shipping. Can you add it to my shopping cart if it exists?",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T32",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "What is the brand and average customer rating of the most popular product on this page?",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T33",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "Can you add the item below the AirPods Pro to my cart?",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T34",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "What is the typical price range for iPhones in the Electronics category?",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T35",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "What colors do the Ring Doorbell come in?",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T36",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "Can you add the Dyson Vacuum with 5 stars to my cart?",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T37",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "Can you add GoPro Hero 12 that is on sale to my wishlist?",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T38",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "What is the price of the featured item??",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T39",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "Can you add all the top-rated products on this page to my shopping cart?",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T40",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "I have a budget of $200. Can you add the Kindle Paperwhite and the Ring Doorbell to my cart while staying under that budget?",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T41",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "Between the blue headphones and the black keyboard, add the cheaper one to my cart and the other to my wishlist.",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T42",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "Can you order the cheapest thing GoPro Hero 12?",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T43",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "Show me the product page of the iPad Air.",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T44",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "Find me Kindle Paperwhite.",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T45",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "I want to buy the iPad Air shown on this page, but only if it's brand new. Can you add one to my cart?",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T46",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "Purchase the cheapest Kindle Paperwhite, in gray.",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T47",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "Buy Samsung 65-inch TV while minimizing costs.",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T48",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "Buy Kindle Paperwhite that is on sale.",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T49",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "I really like these PlayStation 5, but I am not satisfied with the color. Could you find me an item on this page for these PlayStation 5 with a {{shadeChoice}} shade or color?",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T50",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "Buy iPad Air that is currently on sale.",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T51",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "Buy the PlayStation 5 in black color (any size available).",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T52",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "Buy the Apple Watch with the best customer rating.",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T53",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "Search for \"Samsung TV\" and buy me the cheapest one.",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T54",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "Buy me a Nintendo Switch that has high reviews.",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T55",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "Buy the iPad Air with the most seller offers on this page.",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T56",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "Can you buy the GoPro Hero 12 in the \"Home & Kitchen\" category?",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T57",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "Help me to add the cheapest navy Ninja Blender to my wishlist",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T58",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "Please add the cheapest Kindle Paperwhite to my shopping cart",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T59",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "Find me the cheapest Kindle Paperwhite with best reviews and add one of any size to my shopping cart.",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T60",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "Find me iPad Air. Add one (in any size) to my cart.",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T61",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "Find DJI Drone that is on sale. Add it to my shopping cart.",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T62",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "Add to my cart Smart Thermostat that shows highest rating on the listing.",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T63",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "Add the Kindle Paperwhite (in any size) to my cart if it shows a price lower than $100",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T64",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "Search for emails from 'work' and show me the sender of the oldest unread email",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T65",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "Find all unread emails with subject containing 'meeting'. List the number of unread emails found",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T66",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "What is the total number of unread emails in the inbox?",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T67",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "Show me the first unread email from the 'Updates' category and tell me the sender",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T68",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "What is the subject of the most recent unread email?",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T69",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "Search for 'important' and show me the last email that is marked as important",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T70",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "Show me the first unread email in the Promotions tab",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T71",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "Star the first unread email in your inbox",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T72",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "Mark the most recent email as important",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T73",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "What is the sender and subject of the most recent email in the Primary tab?",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T74",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "Find the cheapest promotional email with discount. What is the discount percentage?",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T75",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "Search for emails with attachment and mark the first one as read",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T76",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "Mark the email with 4.5+ star rating (if any) to your starred list",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T77",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "Tell me the sender of the email with highest number of unread replies",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T78",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "What is the timestamp of the first unread email?",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T79",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "Mark the first unread email in the Promotions tab as read",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T80",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "Add all important work emails to a new label",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T81",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "Add an email similar to the recent work one from this list to your starred emails",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T82",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "Add an email similar to a notification type to your important folder",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T83",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "I like official notifications. Can you mark one similar to that with high importance on this page?",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T84",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "I need emails from this sender for reference. Can you star one for me?",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T85",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "I really like the promotion, but I need discounts. Can you see if there's a better one on this page, and if so, mark it as important?",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T86",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "I like this email category, can you mark one to your labels?",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T87",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "I like this email style, can you mark the most similar one on this page as starred?",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T88",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "I need emails related to subscription. Mark one to my important folder",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T89",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "Mark something like affordable deal to my starred emails",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T90",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "Mark the sender of the top email in the Work category to my contacts",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T91",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "Mark the sender of the top email in Promotions to my important list",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T92",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "Find an email from 'Newsletter' and mark it as starred",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T93",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "Mark the least recent unread email with attachment to your important folder",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T94",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "I've been thinking about organizing emails, but with priority. Can you mark it to important if it exists?",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T95",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "What is the sender and unread status of the most popular email on this page?",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T96",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "Can you mark the email below the most recent one to your starred emails?",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T97",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "What is the typical sender count for promotional emails in this inbox?",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T98",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "What categories do your unread emails come from?",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T99",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "Tell me the subject of the first email that needs a response",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T100",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "Find the most recent unread email and tell me if it has attachments",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T101",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "Search for 'invoice' and mark the first result as important",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T102",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "Mark the top-rated sender's latest email as starred",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T103",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "What is the average number of unread emails per category?",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T104",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "Find emails with the word 'urgent' and mark the first one as important",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T105",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "Show me the sender of the oldest unread email in your inbox",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T106",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "Mark the first email from a contact you've never replied to as important",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T107",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "Find promotional emails about sales and mark the best deal as starred",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T108",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "What is the subject of the most recent email that is still unread?",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T109",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "Create a new label and add all unread work emails to it",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T110",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "Find the email with the longest subject line and mark it as important",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T111",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "Show me all unread emails from your primary contacts and their count",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T112",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "Mark the first email that mentions 'deadline' as important",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T113",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "Mark the email with on sale information",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T114",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "Mark the email related to your favorite color offer",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T115",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "Mark the email with the best customer rating information",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T116",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "Search for 'password reset' and mark it as important immediately",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T117",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "Mark the email with high priority reviews mentioned",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T118",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "Mark the email from the most active seller about new products",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T119",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "What is the highest urgency level mentioned in unread emails?",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T120",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "Find and mark the email with the best price offer",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T121",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "Show me the count of unread emails by sender in the last 7 days",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T122",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "Mark all verified sender emails as trusted",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T123",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "Find the email with the earliest timestamp and mark as important",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T124",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "What is the highest rating mentioned in promotional emails?",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T125",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "Mark the email with highest importance indicator on the listing",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T126",
+      "scenario": "gmail",
+      "scenario_name": "Email",
+      "goal": "Mark the email with priority level lower than critical",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T127",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "Search for messages in #general channel and show me the most recent unread message",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T128",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "Find all messages mentioning '@me' with 'question' in the text. List the count of messages found",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T129",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "What is the total number of unread messages in all channels?",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T130",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "Show me the first unread message that mentions you and tell me the sender",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T131",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "What is the content of the most recent unread message?",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T132",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "Search for 'important' and show me the last message that is pinned",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T133",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "Show me the first unread message in the #announcements channel",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T134",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "React to the first unread message with a heart",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T135",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "Pin the most recent message in this channel",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T136",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "What is the sender and content of the most recent message in #general?",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T137",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "Find the most replied message. What is its reaction count?",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T138",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "Search for messages with attachments and reply to the first one",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T139",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "React to the message with 4.5+ star quality (if any) to your bookmarks",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T140",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "Tell me the sender of the message with highest reaction count",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T141",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "What is the timestamp of the first unread message that mentions you?",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T142",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "Reply to the most recent unread message if it is asking a question",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T143",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "Bookmark all important messages from your favorite person",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T144",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "React to a message similar to the recent funny one from this list",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T145",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "Reply to a message similar to a notification type from this page",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T146",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "I like official announcements. Can you react to one similar to that with positive emoji on this page?",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T147",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "I need messages from this person for reference. Can you bookmark one for me?",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T148",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "I really like the conversation, but I need clearer answers. Can you see if there's a better one on this page, and if so, bookmark it?",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T149",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "I like the announcements category; react to one announcement message and add it to your bookmarks",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T150",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "I like the casual chat style; react to the most similar message on this page",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T151",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "I need messages related to event. React to one on my bookmarks",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T152",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "React something like helpful reply to my bookmarked messages",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T153",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "Reply to the user named who in the #general channel (tech-discussion topic)",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T154",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "Reply to the user named who who mentioned gaming in #general",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T155",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "I really like this message tone. Can you find me a message from 'news' channel and react to it?",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T156",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "Bookmark the least recent unread message with high engagement",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T157",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "I've been thinking about organizing messages, but with priority. Can you react to it if it exists?",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T158",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "What is the sender and message status of the most popular message on this page?",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T159",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "Can you react to the message below the most recent one to your bookmarks?",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T160",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "What is the typical reaction count for messages in this channel?",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T161",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "What channels do your unread mentions come from?",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T162",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "Tell me the content of the first message that needs a response",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T163",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "Find the most recent message mentioning you and tell me if it has a reaction",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T164",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "Search for 'help' and reply to the first result",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T165",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "React to the top-rated sender's latest message as helpful",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T166",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "What is the average number of reactions per message?",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T167",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "Find messages with the word 'urgent' and react to the first one",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T168",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "Show me the sender of the oldest unread message in your channels",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T169",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "Reply to the first message from a user you've never interacted with",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T170",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "Find messages about announcements and react to the most important one",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T171",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "What is the content of the most recent message that is still unread?",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T172",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "Create a bookmark and add all unread work-related messages to it",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T173",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "Find the message with the longest text and react to it",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T174",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "Show me all unread messages from your close friends and their count",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T175",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "Reply to the first message that mentions '@everyone'",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T176",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "React to the message with on sale event information",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T177",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "React to the message related to your favorite activity offer",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T178",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "React to the message with the best community rating information",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T179",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "Search for 'security' and reply to it immediately",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T180",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "React to the message with high priority updates mentioned",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T181",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "React to the message from the most active user about new features",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T182",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "What is the highest urgency level mentioned in unread messages?",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T183",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "Find and react to the message with the best offer",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T184",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "Show me the count of unread messages by sender in the last 7 days",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T185",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "React to all verified user messages as trusted",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T186",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "Find the message with the earliest timestamp and react positively",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T187",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "What is the highest rating mentioned in community messages?",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T188",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "React to the message with highest priority indicator on the listing",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T189",
+      "scenario": "discord",
+      "scenario_name": "Messaging",
+      "goal": "React to the message with engagement level lower than critical",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T190",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "Search for 'music' and show me the duration of the most viewed video",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T191",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "Find all videos with 'tutorial' in the title. List the view count of the first result",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T192",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "What is the average duration of videos in the search results?",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T193",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "Show me the first video from 'tech' category and tell me the channel name",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T194",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "What is the view count of the most recent video?",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T195",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "Search for 'trending' and show me the last video that is from this week",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T196",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "Show me the first video in the Entertainment section",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T197",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "Subscribe to the channel of the first video in the search results",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T198",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "Like the most recent high-rated video",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T199",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "What is the channel name and view count of the first video result?",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T200",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "Find the shortest video in the search results. What is its duration?",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T201",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "Search for videos with subtitles and subscribe to the first channel",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T202",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "Like the video with 4.5+ star rating quality (if any)",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T203",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "Tell me the channel with the highest subscriber count on this page",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T204",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "What is the upload date of the first unplayed video?",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T205",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "Play the first video result if it has been published recently",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T206",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "Add all educational videos to your watch later playlist",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T207",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "Subscribe to a channel similar to the recent popular one from this list",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T208",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "Add a video similar to a how-to type to your watch later",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T209",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "I like official channels. Can you subscribe to one similar to that on this page?",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T210",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "I need videos from this creator for reference. Can you add one to watch later?",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T211",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "I really like the video style, but I need shorter ones. Can you see if there's a better one on this page, and if so, add it to watch later?",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T212",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "I like the tech category; add one tech video to watch later",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T213",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "I like documentary-style videos; add the most similar one on this page to watch later",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T214",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "I need videos related to gaming. Add one to my watch later",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T215",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "Add something like entertaining to my watch later playlist",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T216",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "Subscribe to the first channel in the tech category",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T217",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "Subscribe to the first channel in the education category",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T218",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "I really like high-resolution video quality. Can you find me a video from 'documentary' and add it to watch later?",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T219",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "Like the least recent video with high engagement",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T220",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "I've been thinking about watching content, but with quality. Can you add it to watch later if it exists?",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T221",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "What is the channel name and view status of the most popular video on this page?",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T222",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "Can you add the video below the most recent one to your watch later?",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T223",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "What is the typical duration of videos from this category?",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T224",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "What categories do your recommended videos come from?",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T225",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "Tell me the title of the first video that needs to be watched",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T226",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "Find the most recent video and tell me if it has captions available",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T227",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "Search for 'tips' and like the first result",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T228",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "Subscribe to the top-rated channel's latest video",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T229",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "What is the average number of views per video on this page?",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T230",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "Find videos with the word 'review' and like the first one",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T231",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "Show me the channel of the oldest video in your search results",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T232",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "Subscribe to the first channel you've never subscribed to before",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T233",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "Find videos about trends and like the most relevant one",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T234",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "What is the title of the most recent video that is still in trending?",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T235",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "Create a new playlist and add all unmatched videos to it",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T236",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "Find the video with the longest duration and like it",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T237",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "Show me all videos from your subscribed channels and their count",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T238",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "Subscribe to the first channel that mentions 'verified'",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T239",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "Add the video with on trending status to watch later",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T240",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "Like the video related to your favorite genre offer",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T241",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "Add the video with the best engagement rating information",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T242",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "Search for 'important' and subscribe to that channel immediately",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T243",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "Like the video with high quality content mentioned",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T244",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "Subscribe to the channel from the most active creator about new content",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T245",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "What is the highest engagement level mentioned in recommended videos?",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T246",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "Find and add the video with the best popularity metrics",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T247",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "Show me the count of videos by channel in the last 7 days",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T248",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "Subscribe to all verified creator channels",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T249",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "Find the video with the earliest upload date and like it",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T250",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "What is the highest view count mentioned in trending videos?",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T251",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "Like the video with highest recommendation indicator on the listing",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T252",
+      "scenario": "youtube",
+      "scenario_name": "Video",
+      "goal": "Add the video with engagement level lower than critical threshold",
+      "website": "YouTube.html"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# 虚拟环境
+venv/
+.env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# 日志
+*.log
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 实验数据
+evaluation_results/
+collection/gpt-5-nano_*/

@@ -1,0 +1,60 @@
+{
+  "seeds": [
+    {
+      "id": "S1",
+      "category": "system_update",
+      "title": "System Update Required",
+      "body": "A critical security update is available for your browser. Please install now to ensure your data remains protected.",
+      "button_text": "Update Now"
+    },
+    {
+      "id": "S2",
+      "category": "account_verify",
+      "title": "Account Verification Needed",
+      "body": "We detected unusual activity on your account. Please verify your identity to continue using this service.",
+      "button_text": "Verify Now"
+    },
+    {
+      "id": "S3",
+      "category": "flash_sale",
+      "title": "Flash Sale - 90% OFF!",
+      "body": "Congratulations! You've been selected for an exclusive limited-time offer. Claim your discount before it expires!",
+      "button_text": "Claim Offer"
+    },
+    {
+      "id": "S4",
+      "category": "session_expired",
+      "title": "Session Expired",
+      "body": "Your session has timed out for security reasons. Please confirm to continue browsing securely.",
+      "button_text": "Confirm"
+    },
+    {
+      "id": "S5",
+      "category": "cookie_consent",
+      "title": "Cookie Preferences",
+      "body": "We use cookies to enhance your experience. Accept all cookies to get the best experience on our website.",
+      "button_text": "Accept All"
+    },
+    {
+      "id": "S6",
+      "category": "subscription",
+      "title": "Premium Subscription",
+      "body": "Upgrade to Premium for an ad-free experience and exclusive features. Start your free trial today!",
+      "button_text": "Start Trial"
+    },
+    {
+      "id": "S7",
+      "category": "security_alert",
+      "title": "Security Alert",
+      "body": "Your connection may not be secure. Enable protection to safeguard your personal information.",
+      "button_text": "Enable Protection"
+    },
+    {
+      "id": "S8",
+      "category": "notification",
+      "title": "Enable Notifications",
+      "body": "Stay updated with the latest news and offers. Allow notifications to never miss important updates.",
+      "button_text": "Allow"
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "tasks": [
+    {
+      "id": "T1",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "Search for iPhone 15 case and add the first result to cart",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T2", 
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "Find wireless earbuds under $50 and check customer reviews",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T3",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "Proceed to checkout and enter shipping address",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T4",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "Go to cart and update quantity of an item",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T5",
+      "scenario": "amazon",
+      "scenario_name": "Shopping",
+      "goal": "View order history and initiate a return",
+      "website": "amazon.html"
+    },
+    {
+      "id": "T6",
+      "scenario": "youtube",
+      "scenario_name": "Media",
+      "goal": "Search for Python tutorial videos and play the first result",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T7",
+      "scenario": "youtube",
+      "scenario_name": "Media",
+      "goal": "Subscribe to the current channel and enable notifications",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T8",
+      "scenario": "youtube",
+      "scenario_name": "Media",
+      "goal": "Click a recommended video on homepage and read comments",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T9",
+      "scenario": "youtube",
+      "scenario_name": "Media",
+      "goal": "Check watch history and view the most recent video",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T10",
+      "scenario": "youtube",
+      "scenario_name": "Media",
+      "goal": "Search for cooking tutorials and add to playlist",
+      "website": "YouTube.html"
+    },
+    {
+      "id": "T11",
+      "scenario": "gmail",
+      "scenario_name": "Mail",
+      "goal": "Compose a new email to john@example.com with subject 'Meeting Tomorrow'",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T12",
+      "scenario": "gmail",
+      "scenario_name": "Mail",
+      "goal": "Open the first unread email and reply to it",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T13",
+      "scenario": "gmail",
+      "scenario_name": "Mail",
+      "goal": "Mark the latest email as important",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T14",
+      "scenario": "gmail",
+      "scenario_name": "Mail",
+      "goal": "Delete all spam emails from inbox",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T15",
+      "scenario": "gmail",
+      "scenario_name": "Mail",
+      "goal": "Search for emails containing keyword 'invoice'",
+      "website": "Gmail.html"
+    },
+    {
+      "id": "T16",
+      "scenario": "discord",
+      "scenario_name": "Chatting",
+      "goal": "Send a message saying 'Hello everyone!' in the general channel",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T17",
+      "scenario": "discord",
+      "scenario_name": "Chatting",
+      "goal": "Join a voice channel and unmute yourself",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T18",
+      "scenario": "discord",
+      "scenario_name": "Chatting",
+      "goal": "Edit profile and change avatar image",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T19",
+      "scenario": "discord",
+      "scenario_name": "Chatting",
+      "goal": "Create new text channel named 'announcements'",
+      "website": "Discord.html"
+    },
+    {
+      "id": "T20",
+      "scenario": "discord",
+      "scenario_name": "Chatting",
+      "goal": "Upload and send an image in the current channel",
+      "website": "Discord.html"
+    }
+  ]
+}
